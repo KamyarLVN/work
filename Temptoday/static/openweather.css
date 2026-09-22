@@ -1,0 +1,47 @@
+
+
+
+body {
+  background: linear-gradient(black, blue);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Bebas Neue" ,"Press Start 2P";
+  
+}
+.final{
+    color:yellow;
+    position:absolute;
+    left:480px;
+    top:380px;
+}
+.intro{
+    color:yellowgreen;
+    position:absolute;
+    left:500px;
+    
+}
+#wel{
+    position:absolute;
+    top:50px;
+    white-space:nowrap;
+    
+}
+#we{
+    position:absolute;
+    left:65px;
+    
+}
+#button{
+    background-color:gold;
+   
+}
+
+.choose{
+    color:goldenrod;
+    position:relative;
+    top:200px;
+    left:570px;
+   
+    
+}

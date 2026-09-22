@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title ip = "title">Temptoday</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='openweather.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=swap" rel="stylesheet">
+    </head>
+    <body>
+        <dive class="intro">
+            <h1 id="we">welcome</h1>
+            <h2 id="wel">please choose your ideal city</h2>
+        </dive>
+        <dive class="choose">
+        <label id="lab">choose</label>
+        <form Method= "POST">
+            <select name = "city">
+                <option value = Tehran>Tehran</option>
+                <option value = Gorgan>Gorgan</option>
+                <option value = Yazd >Yazd</option>
+                <option value = Isfahan >Isfahan</option>
+                <option value = Mashhad >Mashhad</option>
+                <option value = Khorasan>Khorasan</option>
+                <option value = Kerman >Kerman</option>
+                <option value = Qom >Qom</option>
+                <option value = Ahvaz>Ahvaz</option>
+                <option value = Hamedan>Hamedan</option>
+                <option value = Zahedan>Zahedan</option>
+                <option value = Arak>Arak</option>
+                <option value = Karaj >Karaj</option>
+                <option value = Tabriz >Tabriz</option>
+                <option value = Rasht>Rasht</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <button id="button" type = "submit">click here</button>
+        </form>
+        </dive>
+        {% if temp %}
+        <div class= "final">
+            <h1>the temperature is: {{temp}} `C
+            </h1>
+        </div>
+        {% endif %}
+       
+    </body>
+   
+
+</html>
